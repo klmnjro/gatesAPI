@@ -1,12 +1,12 @@
 const express = require('express');
 const app = express();
-const PORT = 80;
+const PORT = 3000;
 
 app.use(express.json())
 
 app.listen(
 	PORT,
-	() => console.log('it`s alive on localhost:8080')
+	() => console.log('it`s alive on localhost:${PORT}')
 )
 
 //OBJECT CONSTRUCTORS
